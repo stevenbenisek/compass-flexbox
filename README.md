@@ -1,7 +1,7 @@
 # compass-flexbox
 
-A collection of [Compass](http://compass-style.org/) mixins providing the best
-possible browser support for the
+A collection of [Compass](http://compass-style.org/) mixins providing [the best
+possible browser support](http://css-tricks.com/using-flexbox/) for the
 [CSS Flexible Box Layout Module](http://dev.w3.org/csswg/css-flexbox/).
 
 ## Installation
@@ -563,9 +563,10 @@ returns:
 - Blackberry 10+ ?
 - IE Mobile ?
 
-## Further reading
+## Further browsing
 
 - [Using Flexbox: Mixing Old and New for the Best Browser Support](http://css-tricks.com/using-flexbox/)
 - [Caniuse](http://caniuse.com/flexbox)
 - [Flexyboxes](http://the-echoplex.net/flexyboxes/)
+- [Solved by Flexbox](http://philipwalton.github.io/solved-by-flexbox/)
 
