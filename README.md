@@ -81,7 +81,7 @@ returns:
 - ~~Opera Mini~~
 - Android 2.1+
 - Opera Mobile 12.1+
-- Blackberry 10+ ?
+- Blackberry 7+
 - IE Mobile ?
 
 <a></a>
@@ -115,11 +115,11 @@ returns:
 - Chrome 21+
 - Safari 6.1+
 - Opera 12.1+
-- iOS Safari 7+
+- iOS Safari 7
 - ~~Opera Mini~~
 - ~~Android~~
 - Opera Mobile 12.1+
-- Blackberry 10+ ?
+- Blackberry 10
 - IE Mobile ?
 
 ---
@@ -157,7 +157,7 @@ returns:
 - ~~Opera Mini~~
 - Android 2.1+
 - Opera Mobile 12.1+
-- Blackberry 10+ ?
+- Blackberry 7+
 - IE Mobile ?
 
 ---
@@ -187,11 +187,11 @@ returns:
 - Chrome 21+
 - Safari 6.1+
 - Opera 12.1+
-- iOS Safari 7+
+- iOS Safari 7
 - ~~Opera Mini~~
 - ~~Android~~
 - Opera Mobile 12.1+
-- Blackberry 10+ ?
+- Blackberry 10
 - IE Mobile ?
 
 <a></a>
@@ -226,11 +226,11 @@ returns:
 - Chrome 21+
 - Safari 6.1+
 - Opera 12.1+
-- iOS Safari 7+
+- iOS Safari 7
 - ~~Opera Mini~~
 - ~~Android~~
 - Opera Mobile 12.1+
-- Blackberry 10+ ?
+- Blackberry 10
 - IE Mobile ?
 
 ###### Notes:
@@ -270,14 +270,14 @@ returns:
 - ~~Opera Mini~~
 - <sup>**[1](#notes)**</sup> Android 2.1+
 - Opera Mobile 12.1+
-- Blackberry 10+ ?
+- <sup>**[1](#notes)**</sup> Blackberry 7+
 - IE Mobile ?
 
 <a></a>
 ###### Notes:
 
-1. No support for the `space-around` value. Firefox 22+, Chrome 21+, Safari 6.1+
-and iOS Safari 7+ have full support.
+1. No support for the `space-around` value. Firefox 22+, Chrome 21+, Safari 6.1+, 
+iOS Safari 7 and Blackberry 10 have full support.
 
 ---
 <a></a>
@@ -312,7 +312,7 @@ returns:
 - ~~Opera Mini~~
 - Android 2.1+
 - Opera Mobile 12.1+
-- Blackberry 10+ ?
+- Blackberry 7+
 - IE Mobile ?
 
 ---
@@ -342,11 +342,11 @@ returns:
 - Chrome 21+
 - Safari 6.1+
 - Opera 12.1+
-- iOS Safari 7+
+- iOS Safari 7
 - ~~Opera Mini~~
 - ~~Android~~
 - Opera Mobile 12.1+
-- Blackberry 10+ ?
+- Blackberry 10
 - IE Mobile ?
 
 ---
@@ -382,7 +382,7 @@ returns:
 - ~~Opera Mini~~
 - Android 2.1+
 - Opera Mobile 12.1+
-- Blackberry 10+ ?
+- Blackberry 7+
 - IE Mobile ?
 
 ---
@@ -417,7 +417,7 @@ returns:
 - ~~Opera Mini~~
 - Android 2.1+
 - Opera Mobile 12.1+
-- Blackberry 10+ ?
+- Blackberry 7+
 - IE Mobile ?
 
 ---
@@ -447,11 +447,11 @@ returns:
 - Chrome 21+
 - Safari 6.1+
 - Opera 12.1+
-- iOS Safari 7+
+- iOS Safari 7
 - ~~Opera Mini~~
 - ~~Android~~
 - Opera Mobile 12.1+
-- Blackberry 10+ ?
+- Blackberry 10
 - IE Mobile ?
 
 <a></a>
@@ -488,11 +488,11 @@ returns:
 - Chrome 21+
 - Safari 6.1+
 - Opera 12.1+
-- iOS Safari 7+
+- iOS Safari 7
 - ~~Opera Mini~~
 - ~~Android~~
 - Opera Mobile 12.1+
-- Blackberry 10+ ?
+- Blackberry 10
 - IE Mobile ?
 
 ---
@@ -522,11 +522,11 @@ returns:
 - Chrome 21+
 - Safari 6.1+
 - Opera 12.1+
-- iOS Safari 7+
+- iOS Safari 7
 - ~~Opera Mini~~
 - ~~Android~~
 - Opera Mobile 12.1+
-- Blackberry 10+ ?
+- Blackberry 10
 - IE Mobile ?
 
 ---
@@ -556,11 +556,11 @@ returns:
 - Chrome 21+
 - Safari 6.1+
 - Opera 12.1+
-- iOS Safari 7+
+- iOS Safari 7
 - ~~Opera Mini~~
 - ~~Android~~
 - Opera Mobile 12.1+
-- Blackberry 10+ ?
+- Blackberry 10
 - IE Mobile ?
 
 ## Further browsing
@@ -569,4 +569,5 @@ returns:
 - [Caniuse](http://caniuse.com/flexbox)
 - [Flexyboxes](http://the-echoplex.net/flexyboxes/)
 - [Solved by Flexbox](http://philipwalton.github.io/solved-by-flexbox/)
+- [Learn you a flexbox](http://www.the-haystack.com/2012/01/04/learn-you-a-flexbox/)
 
