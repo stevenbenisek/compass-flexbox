@@ -1,0 +1,19 @@
+// @name x-flex-shrink
+// @param {number} [$argument]
+// @returns
+//       -ms-flex-negative: <argument>;
+//     -webkit-flex-shrink: <argument>;
+//             flex-shrink: <argument>;
+// @api public
+// @note IE10 explicitly set other items value
+@mixin x-flex-shrink ($argument: 1) {
+    $argument: unquote($argument);
+    // 2011
+    @include experimental('flex-negative', $argument,
+        not -moz, not -webkit, not -o, -ms, not -khtml, not official
+    );
+    // 2012
+    @include experimental('flex-shrink', $argument,
+        not -moz, -webkit, not -o, not -ms, not -khtml, official
+    );
+}

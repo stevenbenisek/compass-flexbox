@@ -1,0 +1,47 @@
+// =============================================================================
+// FLEXBOX
+// =============================================================================
+
+// For the best browser support we are going to mix old and new syntax.
+//
+// 2009
+// -webkit: iOS 3.2-6, Safari 3.1-6, Android 2.1+
+// -moz: Firefox 3.6-21
+//
+// 2011
+// -ms: IE 10
+//
+// 2012
+// -webkit: Chrome 4-20
+// official: IE 11+, Firefox 22+, Chrome 21+, Safari 6.1+, Opera 12.1+,
+// iOS Safari 7+, Opera Mobile 12.1, +Blackberry 10+.
+//
+// @link http://caniuse.com/flexbox
+// @link http://dev.w3.org/csswg/css3-flexbox
+// @link http://css-tricks.com/using-flexbox
+
+// Flex Container
+@import
+    'display',
+    'flex-direction',
+    'flex-wrap',
+    'flex-flow',
+    'justify-content',
+    'align-items',
+    'align-content';
+
+// Flex item
+@import
+    'order',
+    'flex-grow',
+    'flex-shrink',
+    'flex-basis',
+    'flex',
+    'align-self';
+
+
+
+
+
+
+

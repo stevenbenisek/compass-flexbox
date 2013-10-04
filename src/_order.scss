@@ -1,0 +1,24 @@
+// @name x-order
+// @param {number} [$argument]
+// @returns
+//     -webkit-box-ordinal-group: <argument>;
+//        -moz-box-ordinal-group: <argument>;
+//                -ms-flex-order: <argument>;
+//                 -webkit-order: <argument>;
+//                         order: <argument>;
+// @api public
+@mixin x-order ($argument: 1) {
+    $argument: unquote($argument);
+    // 2009
+    @include experimental('box-ordinal-group', $argument,
+        -moz, -webkit, not -o, not -ms, not -khtml, not official
+    );
+    // 2011
+    @include experimental('flex-order', $argument,
+        not -moz, not -webkit, not -o, -ms, not -khtml, not official
+    );
+    // 2012
+    @include experimental('order', $argument,
+        not -moz, -webkit, not -o, not -ms, not -khtml, official
+    );
+}

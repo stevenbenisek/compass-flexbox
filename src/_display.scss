@@ -1,0 +1,44 @@
+// @name x-display
+// @param {string} [$argument] flex|inline-flex|block|inline-block|...
+// @returns
+//     display: -webkit-box;
+//     display: -moz-box;
+//     display: -ms-flexbox;
+//     display: -webkit-flex;
+//     display: flex;
+//
+//     display: -ms-inline-flexbox;
+//     display: -webkit-inline-flex;
+//     display: inline-flex;
+//
+// @api public
+@mixin x-display ($argument: 'flex') {
+    $argument: unquote($argument);
+    @if $argument == 'flex' {
+        // 2009
+        @include experimental-value('display', 'box',
+            -moz, -webkit, not -o, not -ms, not -khtml, not official
+        );
+        // 2011
+        @include experimental-value('display', 'flexbox',
+            not -moz, not -webkit, not -o, -ms, not -khtml, not official
+        );
+        // 2012
+        @include experimental-value('display', 'flex',
+            not -moz, -webkit, not -o, not -ms, not -khtml, official
+        );
+    } @elseif $argument == 'inline-flex' {
+        // 2011
+        @include experimental-value('display', 'inline-flexbox',
+            not -moz, not -webkit, not -o, -ms, not -khtml, not official
+        );
+        // 2012
+        @include experimental-value('display', 'inline-flex',
+            not -moz, -webkit, not -o, not -ms, not -khtml, official
+        );
+    } @elseif $argument == 'inline-block' {
+        @include inline-block;
+    } @else {
+        display: $argument;
+    }
+}

@@ -1,0 +1,33 @@
+// @name x-align-items
+// @param {string} [$argument] flex-start|flex-end|center|baseline|stretch
+// @returns
+//       -webkit-box-align: <argument-2009-2011>;
+//          -moz-box-align: <argument-2009-2011>;
+//          -ms-flex-align: <argument-2009-2011>;
+//     -webkit-align-items: <argument>;
+//             align-items: <argument>;
+// @api public
+@mixin x-align-items ($argument: 'stretch') {
+    // 2009, 2011
+    // start|end|center|baseline|stretch
+    $argument-2009-2011: $argument;
+    @if $argument-2009-2011 == 'flex-start' {
+        $argument-2009-2011: 'start';
+    } @else if $argument-2009-2011 == 'flex-end' {
+        $argument-2009-2011: 'end';
+    }
+    $argument-2009-2011: unquote($argument-2009-2011);
+    // 2009
+    @include experimental('box-align', $argument-2009-2011,
+        -moz, -webkit, not -o, not -ms, not -khtml, not official
+    );
+    // 2011
+    @include experimental('flex-align', $argument-2009-2011,
+        not -moz, not -webkit, not -o, -ms, not -khtml, not official
+    );
+    // 2012
+    $argument: unquote($argument);
+    @include experimental('align-items', $argument,
+        not -moz, -webkit, not -o, not -ms, not -khtml, official
+    );
+}

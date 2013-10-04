@@ -1,0 +1,49 @@
+// @name _2009-flex-direction
+// @api private
+@mixin _2009-flex-direction ($argument: 'row') {
+    // 2009
+    // $orient horizontal|vertical|inline-axis|block-axis|inherit
+    // $direction normal|reverse|inherit
+    $orient: $argument;
+    $direction: 'normal';
+    @if $orient == 'row' {
+        $orient: 'horizontal';
+    } @else if $orient == 'row-reverse' {
+        $orient: 'horizontal';
+        $direction: 'reverse';
+    } @else if $orient == 'column' {
+        $orient: 'vertical';
+    } @else if $orient == 'column-reverse' {
+        $orient: 'vertical';
+        $direction: 'reverse';
+    }
+    $orient: unquote($orient);
+    $direction: unquote($direction);
+    @include experimental('box-orient', $orient,
+        -moz, -webkit, not -o, not -ms, not -khtml, not official
+    );
+    @include experimental('box-direction', $direction,
+        -moz, -webkit, not -o, not -ms, not -khtml, not official
+    );
+}
+
+// @name x-flex-direction
+// @param {string} [$argument] row|row-reverse|column|column-reverse
+// @returns
+//         -webkit-box-orient: <orient>;
+//            -moz-box-orient: <orient>;
+//      -webkit-box-direction: <direction>;
+//         -moz-box-direction: <direction>;
+//     -webkit-flex-direction: <argument>;
+//         -ms-flex-direction: <argument>;
+//             flex-direction: <argument>;
+// @api public
+@mixin x-flex-direction ($argument: 'row') {
+    // 2009
+    @include _2009-flex-direction($argument);
+    // 2011, 2012
+    $argument: unquote($argument);
+    @include experimental('flex-direction', $argument,
+        not -moz, -webkit, not -o, -ms, not -khtml, official
+    );
+}

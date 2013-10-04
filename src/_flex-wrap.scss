@@ -1,0 +1,32 @@
+// @name _2011-flex-wrap
+// @api private
+@mixin _2011-flex-wrap ($argument: 'nowrap') {
+    $argument-2011: $argument;
+    @if $argument == 'nowrap' {
+        $argument-2011: 'none';
+    }
+    $argument-2011: unquote($argument-2011);
+    @include experimental('flex-wrap', $argument-2011,
+        not -moz, not -webkit, not -o, -ms, not -khtml, not official
+    );
+}
+
+// @name x-flex-wrap
+// @param {string} [$argument] nowrap|wrap|wrap-reverse
+// @returns
+//     -webkit-flex-wrap: <argument>;
+//         -ms-flex-wrap: <argument-2011>;
+//             flex-wrap: <argument>;
+// @api public
+// @note 2009 `box-lines` was never implemented by any browser
+// @note not supported in firefox 20+
+// @note IE10+ doesn't play nice with `flex-direction: column`
+@mixin x-flex-wrap ($argument: 'nowrap') {
+    // 2011
+    @include _2011-flex-wrap($argument);
+    // 2012
+    $argument: unquote($argument);
+    @include experimental('flex-wrap', $argument,
+        not -moz, -webkit, not -o, not -ms, not -khtml, official
+    );
+}

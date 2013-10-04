@@ -1,0 +1,18 @@
+// @name x-flex-basis
+// @param {string|number} [$argument]
+// @returns
+//     -ms-flex-preferred-size: <argument>;
+//          -webkit-flex-basis: <argument>;
+//                  flex-basis: <argument>;
+// @api public
+@mixin x-flex-basis ($argument: 'auto') {
+    $argument: unquote($argument);
+    // 2011
+    @include experimental('flex-preferred-size', $argument,
+        not -moz, not -webkit, not -o, -ms, not -khtml, not official
+    );
+    // 2012
+    @include experimental('flex-basis', $argument,
+        not -moz, -webkit, not -o, not -ms, not -khtml, official
+    );
+}

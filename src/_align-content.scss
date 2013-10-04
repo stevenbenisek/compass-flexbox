@@ -1,0 +1,30 @@
+// @name x-align-content
+// @param {string} [$argument] flex-start|flex-end|center|space-between|space-around|stretch
+// @returns
+//        -ms-flex-lign-pack: <argument-2011>;
+//     -webkit-align-content: <argument>;
+//             align-content: <argument>;
+// @api public
+@mixin x-align-content ($argument: 'stretch') {
+    // 2011
+    // start|end|center|justify|distribute|stretch
+    $argument-2011: $argument;
+    @if $argument-2011 == 'flex-start' {
+        $argument-2011: 'start';
+    } @else if $argument-2011 == 'flex-end' {
+        $argument-2011: 'end';
+    } @else if $argument-2011 == 'space-between' {
+        $argument-2011: 'justify';
+    } @else if $argument-2011 == 'space-around' {
+        $argument-2011: 'distribute';
+    }
+    $argument-2011: unquote($argument-2011);
+    @include experimental('flex-line-pack', $argument-2011,
+        not -moz, not -webkit, not -o, -ms, not -khtml, official
+    );
+    // 2012
+    $argument: unquote($argument);
+    @include experimental('align-content', $argument,
+        not -moz, -webkit, not -o, not -ms, not -khtml, official
+    );
+}

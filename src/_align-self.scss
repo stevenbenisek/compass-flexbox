@@ -1,0 +1,26 @@
+// @name x-align-self
+// @param {string} [$argument] auto|flex-start|flex-end|center|baseline|stretch
+// @returns
+//     -ms-flex-item-align: <argument-2011>;
+//      -webkit-align-self: <argument>;
+//              align-self: <argument>;
+// @api public
+@mixin x-align-self ($argument: 'auto') {
+    // 2011
+    // auto|start|end|center|baseline|stretch
+    $argument-2011: $argument;
+    @if $argument-2011 == 'flex-start' {
+        $argument-2011: 'start';
+    } @else if $argument-2011 == 'flex-end' {
+        $argument-2011: 'end';
+    }
+    $argument-2011: unquote($argument-2011);
+    @include experimental('flex-item-align', $argument-2011,
+        not -moz, not -webkit, not -o, -ms, not -khtml, not official
+    );
+    // 2012
+    $argument: unquote($argument);
+    @include experimental('align-self', $argument,
+        not -moz, -webkit, not -o, not -ms, not -khtml, official
+    );
+}

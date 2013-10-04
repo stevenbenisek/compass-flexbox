@@ -1,0 +1,20 @@
+// @name x-flex-grow
+// @param {number} [$argument]
+// @returns
+//      -webkit-box-flex: <argument>;
+//         -moz-box-flex: <argument>;
+//     -webkit-flex-grow: <argument>;
+//         -ms-flex-grow: <argument>;
+//             flex-grow: <argument>;
+// @api public
+@mixin x-flex-grow ($argument: 0) {
+    $argument: unquote($argument);
+    // 2009
+    @include experimental('box-flex', $argument,
+        -moz, -webkit, not -o, not -ms, not -khtml, not official
+    );
+    // 2011, 2012
+    @include experimental('flex-grow', $argument,
+        not -moz, -webkit, not -o, -ms, not -khtml, official
+    );
+}

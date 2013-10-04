@@ -1,0 +1,43 @@
+// @name x-justify-content
+// @param {string} [$argument] flex-start|flex-end|center|space-between|space-around
+// @returns
+//            -webkit-box-pack: <argument-2009>;
+//               -moz-box-pack: <argument-2009>;
+//               -ms-flex-pack: <argument-2011>;
+//     -webkit-justify-content: <argument>;
+//             justify-content: <argument>;
+// @api public
+// @note 2009 no support for `space-around`
+@mixin x-justify-content ($argument: 'flex-start') {
+    // 2009, 2011
+    // start|end|center|justify
+    $argument-2009: $argument;
+    @if $argument-2009 == 'flex-start' {
+        $argument-2009: 'start';
+    } @else if $argument-2009 == 'flex-end' {
+        $argument-2009: 'end';
+    } @else if $argument-2009 == 'space-between' {
+        $argument-2009: 'justify';
+    } @else if $argument-2009 == 'space-around' {
+        $argument-2009: 'justify';
+    }
+    $argument-2009: unquote($argument-2009);
+    // 2009
+    @include experimental('box-pack', $argument-2009,
+        -moz, -webkit, not -o, not -ms, not -khtml, not official
+    );
+    // 2011
+    $argument-2011: $argument-2009;
+    @if $argument == 'space-around' {
+        $argument-2011: 'distribute';
+    }
+    $argument-2011: unquote($argument-2011);
+    @include experimental('flex-pack', $argument-2011,
+        not -moz, not -webkit, not -o, -ms, not -khtml, not official
+    );
+    // 2012
+    $argument: unquote($argument);
+    @include experimental('justify-content', $argument,
+        not -moz, -webkit, not -o, not -ms, not -khtml, official
+    );
+}

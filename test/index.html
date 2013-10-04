@@ -1,0 +1,942 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Compass Flexbox Tests</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="screen.css">
+</head>
+<body>
+    <header class="main-header" role="banner">
+        <div class="l-container">
+            <h1>Compass Flexbox Tests</h1>
+        </div>
+    </header>
+
+    <div class="main-content l-container" role="main">
+
+        <h2 id="display">Display</h2>
+
+        <h3>Flex</h3>
+        <div class="box" role="image">
+            <div class="flex">
+                <div class="flex__item" contenteditable>A</div>
+                <div class="flex__item" contenteditable>B</div>
+                <div class="flex__item" contenteditable>C</div>
+            </div>
+            <div class="flex">
+                <div class="flex__item" contenteditable>A</div>
+                <div class="flex__item" contenteditable>B</div>
+                <div class="flex__item" contenteditable>C</div>
+            </div>
+            <div class="code">
+                <h4>Flex container</h4>
+                <code class="syntax">@include x-display('flex');</code>
+            </div>
+        </div>
+
+        <h3>Inline-flex</h3>
+        <div class="box" role="image">
+            <div class="flex flex--inline">
+                <div class="flex__item" contenteditable>A</div>
+                <div class="flex__item" contenteditable>B</div>
+            </div>
+            <div class="flex flex--inline">
+                <div class="flex__item" contenteditable>A</div>
+                <div class="flex__item" contenteditable>B</div>
+            </div>
+            <div class="code">
+                <h4>Flex container</h4>
+                <code class="syntax">@include x-display('inline-flex');</code>
+            </div>
+        </div>
+
+        <h2 id="flex-direction">Flex-direction</h2>
+
+        <h3>Row</h3>
+        <div class="box" role="image">
+            <div class="flex">
+                <div class="flex__item" contenteditable>A</div>
+                <div class="flex__item" contenteditable>B</div>
+                <div class="flex__item" contenteditable>C</div>
+                <div class="flex__item" contenteditable>D</div>
+                <div class="flex__item" contenteditable>E</div>
+            </div>
+            <div class="code">
+                <h4>Flex container</h4>
+                <ul>
+                    <li><code>@include x-display('flex');</code></li>
+                    <li><code class="syntax">@include x-flex-direction('row');</code></li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Row-reverse</h3>
+        <div class="box" role="image">
+            <div class="flex flex--reverse">
+                <div class="flex__item" contenteditable>A</div>
+                <div class="flex__item" contenteditable>B</div>
+                <div class="flex__item" contenteditable>C</div>
+                <div class="flex__item" contenteditable>D</div>
+                <div class="flex__item" contenteditable>E</div>
+            </div>
+            <div class="code">
+                <h4>Flex container</h4>
+                <ul>
+                    <li><code>@include x-display('flex');</code></li>
+                    <li><code class="syntax">@include x-flex-direction('row-reverse');</code></li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Column</h3>
+        <div class="box" role="image">
+            <div class="flex flex--row">
+                <div class="flex__item" contenteditable>A</div>
+                <div class="flex__item" contenteditable>B</div>
+                <div class="flex__item" contenteditable>C</div>
+                <div class="flex__item" contenteditable>D</div>
+                <div class="flex__item" contenteditable>E</div>
+            </div>
+            <div class="code">
+                <h4>Flex container</h4>
+                <ul>
+                    <li><code>@include x-display('flex');</code></li>
+                    <li><code class="syntax">@include x-flex-direction('column');</code></li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Column-reverse</h3>
+        <div class="box" role="image">
+            <div class="flex flex--row flex--reverse">
+                <div class="flex__item" contenteditable>A</div>
+                <div class="flex__item" contenteditable>B</div>
+                <div class="flex__item" contenteditable>C</div>
+                <div class="flex__item" contenteditable>D</div>
+                <div class="flex__item" contenteditable>E</div>
+            </div>
+            <div class="code">
+                <h4>Flex container</h4>
+                <ul>
+                    <li><code>@include x-display('flex');</code></li>
+                    <li><code class="syntax">@include x-flex-direction('column-reverse');</code></li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 id="flex-wrap">Flex-wrap</h2>
+
+        <h3>Nowrap</h3>
+        <div class="box" role="image">
+            <div class="flex">
+                <div class="flex__item" contenteditable>A</div>
+                <div class="flex__item" contenteditable>B</div>
+                <div class="flex__item" contenteditable>C</div>
+                <div class="flex__item" contenteditable>D</div>
+                <div class="flex__item" contenteditable>E</div>
+                <div class="flex__item" contenteditable>F</div>
+                <div class="flex__item" contenteditable>G</div>
+                <div class="flex__item" contenteditable>H</div>
+                <div class="flex__item" contenteditable>I</div>
+                <div class="flex__item" contenteditable>J</div>
+                <div class="flex__item" contenteditable>K</div>
+                <div class="flex__item" contenteditable>L</div>
+                <div class="flex__item" contenteditable>M</div>
+                <div class="flex__item" contenteditable>N</div>
+                <div class="flex__item" contenteditable>O</div>
+            </div>
+            <div class="code">
+                <h4>Flex container</h4>
+                <ul>
+                    <li><code>@include x-display('flex');</code></li>
+                    <li><code>@include x-flex-direction('row');</code></li>
+                    <li><code class="syntax">@include x-flex-wrap('nowrap');</code></li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Wrap</h3>
+        <div class="box" role="image">
+            <div class="flex flex--wrap">
+                <div class="flex__item" contenteditable>A</div>
+                <div class="flex__item" contenteditable>B</div>
+                <div class="flex__item" contenteditable>C</div>
+                <div class="flex__item" contenteditable>D</div>
+                <div class="flex__item" contenteditable>E</div>
+                <div class="flex__item" contenteditable>F</div>
+                <div class="flex__item" contenteditable>G</div>
+                <div class="flex__item" contenteditable>H</div>
+                <div class="flex__item" contenteditable>I</div>
+                <div class="flex__item" contenteditable>J</div>
+                <div class="flex__item" contenteditable>K</div>
+                <div class="flex__item" contenteditable>L</div>
+                <div class="flex__item" contenteditable>M</div>
+                <div class="flex__item" contenteditable>N</div>
+                <div class="flex__item" contenteditable>O</div>
+            </div>
+            <div class="code">
+                <h4>Flex container</h4>
+                <ul>
+                    <li><code>@include x-display('flex');</code></li>
+                    <li><code>@include x-flex-direction('row');</code></li>
+                    <li><code class="syntax">@include x-flex-wrap('wrap');</code></li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Wrap-reverse</h3>
+        <div class="box" role="image">
+            <div class="flex flex--wrap-reverse">
+                <div class="flex__item" contenteditable>A</div>
+                <div class="flex__item" contenteditable>B</div>
+                <div class="flex__item" contenteditable>C</div>
+                <div class="flex__item" contenteditable>D</div>
+                <div class="flex__item" contenteditable>E</div>
+                <div class="flex__item" contenteditable>F</div>
+                <div class="flex__item" contenteditable>G</div>
+                <div class="flex__item" contenteditable>H</div>
+                <div class="flex__item" contenteditable>I</div>
+                <div class="flex__item" contenteditable>J</div>
+                <div class="flex__item" contenteditable>K</div>
+                <div class="flex__item" contenteditable>L</div>
+                <div class="flex__item" contenteditable>M</div>
+                <div class="flex__item" contenteditable>N</div>
+                <div class="flex__item" contenteditable>O</div>
+            </div>
+            <div class="code">
+                <h4>Flex container</h4>
+                <ul>
+                    <li><code>@include x-display('flex');</code></li>
+                    <li><code>@include x-flex-direction('row');</code></li>
+                    <li><code class="syntax">@include x-flex-wrap('wrap-reverse');</code></li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 id="flex-flow">Flex-flow</h2>
+
+        <h3>Column wrap</h3>
+        <div class="box" role="image">
+            <div class="flex flex--flow-column-wrap">
+                <div class="flex__item" contenteditable>A</div>
+                <div class="flex__item" contenteditable>B</div>
+                <div class="flex__item" contenteditable>C</div>
+                <div class="flex__item" contenteditable>D</div>
+                <div class="flex__item" contenteditable>E</div>
+                <div class="flex__item" contenteditable>F</div>
+                <div class="flex__item" contenteditable>G</div>
+                <div class="flex__item" contenteditable>H</div>
+                <div class="flex__item" contenteditable>I</div>
+                <div class="flex__item" contenteditable>J</div>
+                <div class="flex__item" contenteditable>K</div>
+                <div class="flex__item" contenteditable>L</div>
+                <div class="flex__item" contenteditable>M</div>
+                <div class="flex__item" contenteditable>N</div>
+                <div class="flex__item" contenteditable>O</div>
+            </div>
+            <div class="code">
+                <h4>Flex container</h4>
+                <ul>
+                    <li><code>@include x-display('flex');</code></li>
+                    <li><code class="syntax">@include x-flex-flow('column wrap');</code></li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Column nowrap</h3>
+        <div class="box" role="image">
+            <div class="flex flex--flow-column-nowrap">
+                <div class="flex__item" contenteditable>A</div>
+                <div class="flex__item" contenteditable>B</div>
+                <div class="flex__item" contenteditable>C</div>
+                <div class="flex__item" contenteditable>D</div>
+                <div class="flex__item" contenteditable>E</div>
+            </div>
+            <div class="code">
+                <h4>Flex container</h4>
+                <ul>
+                    <li><code>@include x-display('flex');</code></li>
+                    <li><code class="syntax">@include x-flex-flow('column nowrap');</code></li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 id="justify-content">Justify-content</h2>
+
+        <h3>Flex-start</h3>
+        <div class="box" role="image">
+            <div class="flex flex--justify-content--start">
+                <div class="flex__item" contenteditable>A</div>
+                <div class="flex__item" contenteditable>B</div>
+                <div class="flex__item" contenteditable>C</div>
+                <div class="flex__item" contenteditable>D</div>
+                <div class="flex__item" contenteditable>E</div>
+            </div>
+            <div class="code">
+                <h4>Flex container</h4>
+                <ul>
+                    <li><code>@include x-display('flex');</code></li>
+                    <li><code>@include x-flex-direction('row');</code></li>
+                    <li><code class="syntax">@include x-justify-content('flex-start');</code></li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Flex-end</h3>
+        <div class="box" role="image">
+            <div class="flex flex--justify-content--end">
+                <div class="flex__item" contenteditable>A</div>
+                <div class="flex__item" contenteditable>B</div>
+                <div class="flex__item" contenteditable>C</div>
+                <div class="flex__item" contenteditable>D</div>
+                <div class="flex__item" contenteditable>E</div>
+            </div>
+            <div class="code">
+                <h4>Flex container</h4>
+                <ul>
+                    <li><code>@include x-display('flex');</code></li>
+                    <li><code>@include x-flex-direction('row');</code></li>
+                    <li><code class="syntax">@include x-justify-content('flex-end');</code></li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Center</h3>
+        <div class="box" role="image">
+            <div class="flex flex--justify-content--center">
+                <div class="flex__item" contenteditable>A</div>
+                <div class="flex__item" contenteditable>B</div>
+                <div class="flex__item" contenteditable>C</div>
+                <div class="flex__item" contenteditable>D</div>
+                <div class="flex__item" contenteditable>E</div>
+            </div>
+            <div class="code">
+                <h4>Flex container</h4>
+                <ul>
+                    <li><code>@include x-display('flex');</code></li>
+                    <li><code>@include x-flex-direction('row');</code></li>
+                    <li><code class="syntax">@include x-justify-content('center');</code></li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Space-between</h3>
+        <div class="box" role="image">
+            <div class="flex flex--justify-content--space-between">
+                <div class="flex__item" contenteditable>A</div>
+                <div class="flex__item" contenteditable>B</div>
+                <div class="flex__item" contenteditable>C</div>
+                <div class="flex__item" contenteditable>D</div>
+                <div class="flex__item" contenteditable>E</div>
+            </div>
+            <div class="code">
+                <h4>Flex container</h4>
+                <ul>
+                    <li><code>@include x-display('flex');</code></li>
+                    <li><code>@include x-flex-direction('row');</code></li>
+                    <li><code class="syntax">@include x-justify-content('space-between');</code></li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Space-around</h3>
+        <div class="box" role="image">
+            <div class="flex flex--justify-content--space-around">
+                <div class="flex__item" contenteditable>A</div>
+                <div class="flex__item" contenteditable>B</div>
+                <div class="flex__item" contenteditable>C</div>
+                <div class="flex__item" contenteditable>D</div>
+                <div class="flex__item" contenteditable>E</div>
+            </div>
+            <div class="code">
+                <h4>Flex container</h4>
+                <ul>
+                    <li><code>@include x-display('flex');</code></li>
+                    <li><code>@include x-flex-direction('row');</code></li>
+                    <li><code class="syntax">@include x-justify-content('space-around');</code></li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 id="align-items">Align items</h2>
+
+        <h3>Flex-start</h3>
+        <div class="box" role="image">
+            <div class="flex flex--align-items flex--align-items--start">
+                <div class="flex__item" contenteditable>A</div>
+                <div class="flex__item" contenteditable>B</div>
+                <div class="flex__item" contenteditable>C</div>
+                <div class="flex__item" contenteditable>D</div>
+                <div class="flex__item" contenteditable>E</div>
+            </div>
+            <div class="code">
+                <h4>Flex container</h4>
+                <ul>
+                    <li><code>@include x-display('flex');</code></li>
+                    <li><code>@include x-flex-direction('row');</code></li>
+                    <li><code class="syntax">@include x-align-items('flex-start');</code></li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Flex-end</h3>
+        <div class="box" role="image">
+            <div class="flex flex--align-items flex--align-items--end">
+                <div class="flex__item" contenteditable>A</div>
+                <div class="flex__item" contenteditable>B</div>
+                <div class="flex__item" contenteditable>C</div>
+                <div class="flex__item" contenteditable>D</div>
+                <div class="flex__item" contenteditable>E</div>
+            </div>
+            <div class="code">
+                <h4>Flex container</h4>
+                <ul>
+                    <li><code>@include x-display('flex');</code></li>
+                    <li><code>@include x-flex-direction('row');</code></li>
+                    <li><code class="syntax">@include x-align-items('flex-end');</code></li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Center</h3>
+        <div class="box" role="image">
+            <div class="flex flex--align-items flex--align-items--center">
+                <div class="flex__item" contenteditable>A</div>
+                <div class="flex__item" contenteditable>B</div>
+                <div class="flex__item" contenteditable>C</div>
+                <div class="flex__item" contenteditable>D</div>
+                <div class="flex__item" contenteditable>E</div>
+            </div>
+            <div class="code">
+                <h4>Flex container</h4>
+                <ul>
+                    <li><code>@include x-display('flex');</code></li>
+                    <li><code>@include x-flex-direction('row');</code></li>
+                    <li><code class="syntax">@include x-align-items('center');</code></li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Baseline</h3>
+        <div class="box" role="image">
+            <div class="flex flex--align-items flex--align-items--baseline">
+                <div class="flex__item" contenteditable>A</div>
+                <div class="flex__item" contenteditable>B</div>
+                <div class="flex__item" contenteditable>C</div>
+                <div class="flex__item" contenteditable>D</div>
+                <div class="flex__item" contenteditable>E</div>
+            </div>
+            <div class="code">
+                <h4>Flex container</h4>
+                <ul>
+                    <li><code>@include x-display('flex');</code></li>
+                    <li><code>@include x-flex-direction('row');</code></li>
+                    <li><code class="syntax">@include x-align-items('baseline');</code></li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Stretch</h3>
+        <div class="box" role="image">
+            <div class="flex flex--align-items flex--align-items--stretch">
+                <div class="flex__item" contenteditable>A</div>
+                <div class="flex__item" contenteditable>B</div>
+                <div class="flex__item" contenteditable>C</div>
+                <div class="flex__item" contenteditable>D</div>
+                <div class="flex__item" contenteditable>E</div>
+            </div>
+            <div class="code">
+                <h4>Flex container</h4>
+                <ul>
+                    <li><code>@include x-display('flex');</code></li>
+                    <li><code>@include x-flex-direction('row');</code></li>
+                    <li><code class="syntax">@include x-align-items('stretch');</code></li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 id="align-content">Align content</h2>
+
+        <h3>Flex-start</h3>
+        <div class="box" role="image">
+            <div class="flex flex--align-content flex--align-content--start">
+                <div class="flex__item" contenteditable>A</div>
+                <div class="flex__item" contenteditable>B</div>
+                <div class="flex__item" contenteditable>C</div>
+                <div class="flex__item" contenteditable>D</div>
+                <div class="flex__item" contenteditable>E</div>
+                <div class="flex__item" contenteditable>F</div>
+                <div class="flex__item" contenteditable>G</div>
+                <div class="flex__item" contenteditable>H</div>
+                <div class="flex__item" contenteditable>I</div>
+                <div class="flex__item" contenteditable>J</div>
+                <div class="flex__item" contenteditable>K</div>
+                <div class="flex__item" contenteditable>L</div>
+                <div class="flex__item" contenteditable>M</div>
+                <div class="flex__item" contenteditable>N</div>
+                <div class="flex__item" contenteditable>O</div>
+            </div>
+            <div class="code">
+                <h4>Flex container</h4>
+                <ul>
+                    <li><code>@include x-display('flex');</code></li>
+                    <li><code>@include x-flex-direction('row');</code></li>
+                    <li><code>@include x-flex-wrap('wrap');</code></li>
+                    <li><code class="syntax">@include x-align-content('flex-start');</code></li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Flex-end</h3>
+        <div class="box" role="image">
+            <div class="flex flex--align-content flex--align-content--end">
+                <div class="flex__item" contenteditable>A</div>
+                <div class="flex__item" contenteditable>B</div>
+                <div class="flex__item" contenteditable>C</div>
+                <div class="flex__item" contenteditable>D</div>
+                <div class="flex__item" contenteditable>E</div>
+                <div class="flex__item" contenteditable>F</div>
+                <div class="flex__item" contenteditable>G</div>
+                <div class="flex__item" contenteditable>H</div>
+                <div class="flex__item" contenteditable>I</div>
+                <div class="flex__item" contenteditable>J</div>
+                <div class="flex__item" contenteditable>K</div>
+                <div class="flex__item" contenteditable>L</div>
+                <div class="flex__item" contenteditable>M</div>
+                <div class="flex__item" contenteditable>N</div>
+                <div class="flex__item" contenteditable>O</div>
+            </div>
+            <div class="code">
+                <h4>Flex container</h4>
+                <ul>
+                    <li><code>@include x-display('flex');</code></li>
+                    <li><code>@include x-flex-direction('row');</code></li>
+                    <li><code>@include x-flex-wrap('wrap');</code></li>
+                    <li><code class="syntax">@include x-align-content('flex-end');</code></li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Center</h3>
+        <div class="box" role="image">
+            <div class="flex flex--align-content flex--align-content--center">
+                <div class="flex__item" contenteditable>A</div>
+                <div class="flex__item" contenteditable>B</div>
+                <div class="flex__item" contenteditable>C</div>
+                <div class="flex__item" contenteditable>D</div>
+                <div class="flex__item" contenteditable>E</div>
+                <div class="flex__item" contenteditable>F</div>
+                <div class="flex__item" contenteditable>G</div>
+                <div class="flex__item" contenteditable>H</div>
+                <div class="flex__item" contenteditable>I</div>
+                <div class="flex__item" contenteditable>J</div>
+                <div class="flex__item" contenteditable>K</div>
+                <div class="flex__item" contenteditable>L</div>
+                <div class="flex__item" contenteditable>M</div>
+                <div class="flex__item" contenteditable>N</div>
+                <div class="flex__item" contenteditable>O</div>
+            </div>
+            <div class="code">
+                <h4>Flex container</h4>
+                <ul>
+                    <li><code>@include x-display('flex');</code></li>
+                    <li><code>@include x-flex-direction('row');</code></li>
+                    <li><code>@include x-flex-wrap('wrap');</code></li>
+                    <li><code class="syntax">@include x-align-content('center');</code></li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Space-around</h3>
+        <div class="box" role="image">
+            <div class="flex flex--align-content flex--align-content--space-around">
+                <div class="flex__item" contenteditable>A</div>
+                <div class="flex__item" contenteditable>B</div>
+                <div class="flex__item" contenteditable>C</div>
+                <div class="flex__item" contenteditable>D</div>
+                <div class="flex__item" contenteditable>E</div>
+                <div class="flex__item" contenteditable>F</div>
+                <div class="flex__item" contenteditable>G</div>
+                <div class="flex__item" contenteditable>H</div>
+                <div class="flex__item" contenteditable>I</div>
+                <div class="flex__item" contenteditable>J</div>
+                <div class="flex__item" contenteditable>K</div>
+                <div class="flex__item" contenteditable>L</div>
+                <div class="flex__item" contenteditable>M</div>
+                <div class="flex__item" contenteditable>N</div>
+                <div class="flex__item" contenteditable>O</div>
+            </div>
+            <div class="code">
+                <h4>Flex container</h4>
+                <ul>
+                    <li><code>@include x-display('flex');</code></li>
+                    <li><code>@include x-flex-direction('row');</code></li>
+                    <li><code>@include x-flex-wrap('wrap');</code></li>
+                    <li><code class="syntax">@include x-align-content('space-around');</code></li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Space-between</h3>
+        <div class="box" role="image">
+            <div class="flex flex--align-content flex--align-content--space-between">
+                <div class="flex__item" contenteditable>A</div>
+                <div class="flex__item" contenteditable>B</div>
+                <div class="flex__item" contenteditable>C</div>
+                <div class="flex__item" contenteditable>D</div>
+                <div class="flex__item" contenteditable>E</div>
+                <div class="flex__item" contenteditable>F</div>
+                <div class="flex__item" contenteditable>G</div>
+                <div class="flex__item" contenteditable>H</div>
+                <div class="flex__item" contenteditable>I</div>
+                <div class="flex__item" contenteditable>J</div>
+                <div class="flex__item" contenteditable>K</div>
+                <div class="flex__item" contenteditable>L</div>
+                <div class="flex__item" contenteditable>M</div>
+                <div class="flex__item" contenteditable>N</div>
+                <div class="flex__item" contenteditable>O</div>
+            </div>
+            <div class="code">
+                <h4>Flex container</h4>
+                <ul>
+                    <li><code>@include x-display('flex');</code></li>
+                    <li><code>@include x-flex-direction('row');</code></li>
+                    <li><code>@include x-flex-wrap('wrap');</code></li>
+                    <li><code class="syntax">@include x-align-content('space-between');</code></li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Stretch</h3>
+        <div class="box" role="image">
+            <div class="flex flex--align-content flex--align-content--stretch">
+                <div class="flex__item" contenteditable>A</div>
+                <div class="flex__item" contenteditable>B</div>
+                <div class="flex__item" contenteditable>C</div>
+                <div class="flex__item" contenteditable>D</div>
+                <div class="flex__item" contenteditable>E</div>
+                <div class="flex__item" contenteditable>F</div>
+                <div class="flex__item" contenteditable>G</div>
+                <div class="flex__item" contenteditable>H</div>
+                <div class="flex__item" contenteditable>I</div>
+                <div class="flex__item" contenteditable>J</div>
+                <div class="flex__item" contenteditable>K</div>
+                <div class="flex__item" contenteditable>L</div>
+                <div class="flex__item" contenteditable>M</div>
+                <div class="flex__item" contenteditable>N</div>
+                <div class="flex__item" contenteditable>O</div>
+            </div>
+            <div class="code">
+                <h4>Flex container</h4>
+                <ul>
+                    <li><code>@include x-display('flex');</code></li>
+                    <li><code>@include x-flex-direction('row');</code></li>
+                    <li><code>@include x-flex-wrap('wrap');</code></li>
+                    <li><code class="syntax">@include x-align-content('stretch');</code></li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 id="flex-order">Order</h2>
+
+        <h3>Number</h3>
+        <div class="box" role="image">
+            <div class="flex flex--flex-order">
+                <div class="flex__item" contenteditable>A</div>
+                <div class="flex__item" contenteditable>B</div>
+                <div class="flex__item" contenteditable>C</div>
+                <div class="flex__item" contenteditable>D</div>
+                <div class="flex__item" contenteditable>E</div>
+            </div>
+            <div class="code">
+                <h4>Flex container</h4>
+                <code>@include x-display('flex');</code>
+                <h4>Flex item</h4>
+                <span class="label label--highlight"></span>
+                <code class="syntax">@include x-order('2');</code>
+            </div>
+        </div>
+
+        <h2 id="flex-grow">Flex grow</h2>
+
+        <h3>Number</h3>
+        <div class="box" role="image">
+            <div class="flex flex--flex-grow">
+                <div class="flex__item" contenteditable>A</div>
+                <div class="flex__item" contenteditable>B</div>
+                <div class="flex__item" contenteditable>C</div>
+                <div class="flex__item" contenteditable>D</div>
+                <div class="flex__item" contenteditable>E</div>
+            </div>
+            <div class="code">
+                <h4>Flex container</h4>
+                <code>@include x-display('flex');</code>
+                <h4>Flex item</h4>
+                <span class="label label--highlight"></span>
+                <code class="syntax">@include x-flex-grow('1');</code>
+            </div>
+        </div>
+
+        <h2 id="flex-shrink">Flex shrink</h2>
+
+        <h3>Number</h3>
+        <div class="box" role="image">
+            <div class="flex flex--flex-shrink">
+                <div class="flex__item" contenteditable>A</div>
+                <div class="flex__item" contenteditable>B</div>
+                <div class="flex__item" contenteditable>C</div>
+                <div class="flex__item" contenteditable>D</div>
+                <div class="flex__item" contenteditable>E</div>
+            </div>
+            <div class="code">
+                <h4>Flex container</h4>
+                <code>@include x-display('flex');</code>
+                <h4>Flex item</h4>
+                <span class="label label--highlight"></span>
+                <code class="syntax">@include x-flex-shrink('2');</code>
+            </div>
+        </div>
+
+        <h2 id="flex-basis">Flex basis</h2>
+
+        <h3>Number</h3>
+        <div class="box" role="image">
+            <div class="flex flex--flex-basis">
+                <div class="flex__item" contenteditable>A</div>
+                <div class="flex__item" contenteditable>B</div>
+                <div class="flex__item" contenteditable>C</div>
+                <div class="flex__item" contenteditable>D</div>
+                <div class="flex__item" contenteditable>E</div>
+            </div>
+            <div class="code">
+                <h4>Flex container</h4>
+                <code>@include x-display('flex');</code>
+                <h4>Flex item</h4>
+                <span class="label label--highlight"></span>
+                <code class="syntax">@include x-flex-basis('200px');</code>
+            </div>
+        </div>
+
+        <h2 id="flex">Flex</h2>
+
+        <h3>Initial</h3>
+        <div class="box" role="image">
+            <div class="flex flex--flex--initial">
+                <div class="flex__item" contenteditable>A</div>
+                <div class="flex__item" contenteditable>B</div>
+                <div class="flex__item" contenteditable>C</div>
+                <div class="flex__item" contenteditable>D</div>
+                <div class="flex__item" contenteditable>E</div>
+            </div>
+            <div class="code">
+                <h4>Flex container</h4>
+                <code>@include x-display('flex');</code>
+                <h4>Flex item</h4>
+                <ul>
+                    <li>
+                        <span class="label"></span>
+                        <code class="syntax">@include x-flex('auto');</code>
+                    </li>
+                    <li>
+                        <span class="label label--highlight"></span>
+                        <code class="syntax">@include x-flex('initial');</code>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Auto</h3>
+        <div class="box" role="image">
+            <div class="flex flex--flex--auto">
+                <div class="flex__item" contenteditable>A</div>
+                <div class="flex__item" contenteditable>B</div>
+                <div class="flex__item" contenteditable>C</div>
+                <div class="flex__item" contenteditable>D</div>
+                <div class="flex__item" contenteditable>E</div>
+            </div>
+            <div class="code">
+                <h4>Flex container</h4>
+                <code>@include x-display('flex');</code>
+                <h4>Flex item</h4>
+                <span class="label label--highlight"></span>
+                <code class="syntax">@include x-flex('auto');</code>
+            </div>
+        </div>
+
+        <h3>None</h3>
+        <div class="box" role="image">
+            <div class="flex flex--flex--none">
+                <div class="flex__item" contenteditable>A</div>
+                <div class="flex__item" contenteditable>B</div>
+                <div class="flex__item" contenteditable>C</div>
+                <div class="flex__item" contenteditable>D</div>
+                <div class="flex__item flex__item--flex-none" contenteditable>E</div>
+            </div>
+            <div class="code">
+                <h4>Flex container</h4>
+                <code>@include x-display('flex');</code>
+                <h4>Flex item</h4>
+                <ul>
+                    <li>
+                        <span class="label"></span>
+                        <code class="syntax">@include x-flex('auto');</code>
+                    </li>
+                    <li>
+                        <span class="label label--highlight"></span>
+                        <code class="syntax">@include x-flex('none');</code>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 id="align-self">Align-self</h2>
+
+        <h3>Auto</h3>
+        <div class="box" role="image">
+            <div class="flex flex--align-self flex--align-self--auto">
+                <div class="flex__item" contenteditable>A</div>
+                <div class="flex__item" contenteditable>B</div>
+                <div class="flex__item" contenteditable>C</div>
+                <div class="flex__item" contenteditable>D</div>
+                <div class="flex__item" contenteditable>E</div>
+            </div>
+            <div class="code">
+                <h4>Flex container</h4>
+                <code>@include x-display('flex');</code>
+                <h4>Flex item</h4>
+                <ul>
+                    <li>
+                        <span class="label"></span>
+                        <code class="syntax">@include x-align-self('center');</code>
+                    </li>
+                    <li>
+                        <span class="label label--highlight"></span>
+                        <code class="syntax">@include x-align-self('auto');</code>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Flex-start</h3>
+        <div class="box" role="image">
+            <div class="flex flex--align-self flex--align-self--start">
+                <div class="flex__item" contenteditable>A</div>
+                <div class="flex__item" contenteditable>B</div>
+                <div class="flex__item" contenteditable>C</div>
+                <div class="flex__item" contenteditable>D</div>
+                <div class="flex__item" contenteditable>E</div>
+            </div>
+            <div class="code">
+                <h4>Flex container</h4>
+                <code>@include x-display('flex');</code>
+                <h4>Flex item</h4>
+                <span class="label label--highlight"></span>
+                <code class="syntax">@include x-align-self('flex-start');</code>
+            </div>
+        </div>
+
+        <h3>Flex-end</h3>
+        <div class="box" role="image">
+            <div class="flex flex--align-self flex--align-self--end">
+                <div class="flex__item" contenteditable>A</div>
+                <div class="flex__item" contenteditable>B</div>
+                <div class="flex__item" contenteditable>C</div>
+                <div class="flex__item" contenteditable>D</div>
+                <div class="flex__item" contenteditable>E</div>
+            </div>
+            <div class="code">
+                <h4>Flex container</h4>
+                <code>@include x-display('flex');</code>
+                <h4>Flex item</h4>
+                <span class="label label--highlight"></span>
+                <code class="syntax">@include x-align-self('flex-end');</code>
+            </div>
+        </div>
+
+        <h3>Center</h3>
+        <div class="box" role="image">
+            <div class="flex flex--align-self  flex--align-self--center">
+                <div class="flex__item" contenteditable>A</div>
+                <div class="flex__item" contenteditable>B</div>
+                <div class="flex__item" contenteditable>C</div>
+                <div class="flex__item" contenteditable>D</div>
+                <div class="flex__item" contenteditable>E</div>
+            </div>
+            <div class="code">
+                <h4>Flex container</h4>
+                <code>@include x-display('flex');</code>
+                <h4>Flex item</h4>
+                <span class="label label--highlight"></span>
+                <code class="syntax">@include x-align-self('center');</code>
+            </div>
+        </div>
+
+        <h3>Baseline</h3>
+        <div class="box" role="image">
+            <div class="flex flex--align-self flex--align-self--baseline">
+                <div class="flex__item" contenteditable>A</div>
+                <div class="flex__item" contenteditable>B</div>
+                <div class="flex__item" contenteditable>C</div>
+                <div class="flex__item" contenteditable>D</div>
+                <div class="flex__item" contenteditable>E</div>
+            </div>
+            <div class="code">
+                <h4>Flex container</h4>
+                <code>@include x-display('flex');</code>
+                <h4>Flex item</h4>
+                <span class="label label--highlight"></span>
+                <code class="syntax">@include x-align-self('baseline');</code>
+            </div>
+        </div>
+
+        <h3>Stretch</h3>
+        <div class="box" role="image">
+            <div class="flex flex--align-self flex--align-self--stretch">
+                <div class="flex__item" contenteditable>A</div>
+                <div class="flex__item" contenteditable>B</div>
+                <div class="flex__item" contenteditable>C</div>
+                <div class="flex__item" contenteditable>D</div>
+                <div class="flex__item" contenteditable>E</div>
+            </div>
+            <div class="code">
+                <h4>Flex container</h4>
+                <code>@include x-display('flex');</code>
+                <h4>Flex item</h4>
+                <ul>
+                    <li>
+                        <span class="label"></span>
+                        <code class="syntax">@include x-align-self('flex-start');</code>
+                    </li>
+                    <li>
+                        <span class="label label--highlight"></span>
+                        <code class="syntax">@include x-align-self('stretch');</code>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Syntax highlighting
+        'querySelectorAll' in document && (function (doc) {
+            var strKlassLang = 'syntax__lang',
+                strKlassProperty = 'syntax__property',
+                strKlassValue = 'syntax__value',
+                strKlassPunctuation = 'syntax__punctuation',
+                reSass = /(@include) ([\S\s]*?)(\(')(.*?)('\);)/,
+                str = '<b class="' + strKlassLang + '">$1</b> <b class="' + strKlassProperty + '">$2</b><b class="' + strKlassPunctuation + '">$3</b><b class="' + strKlassValue + '">$4</b><b class="' + strKlassPunctuation + '">$5</b>',
+                elements = doc.querySelectorAll('code.syntax'),
+                count = elements.length,
+                element;
+
+            while (count--) {
+                element = elements[count];
+                element.innerHTML = element.innerHTML.replace(reSass, str);
+            }
+
+        })(document);
+    </script>
+
+</body>
+</html>

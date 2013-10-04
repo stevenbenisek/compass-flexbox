@@ -1,0 +1,24 @@
+// @name x-flex-flow
+// @param {string} [$argument] flex-direction||flex-wrap
+// @returns
+//         -webkit-flex-flow: <argument>;
+//             -ms-flex-flow: <argument>;
+//                 flex-flow: <argument>;
+// @api public
+// @note firefox 20+ doesn't support flex-wrap
+@mixin x-flex-flow ($argument: 'row' 'nowrap') {
+    $argument: unquote($argument);
+    $is-list: type-of($argument) == 'list';
+
+    @if $is-list {
+        $arguments: ();
+        @each $item in $argument {
+            $arguments: append($arguments, unquote($item));
+        }
+        $argument: $arguments;
+    }
+    // 2011, 2012
+    @include experimental('flex-flow', $argument,
+        not -moz, -webkit, not -o, -ms, not -khtml, official
+    );
+}

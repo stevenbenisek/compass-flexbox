@@ -1,0 +1,33 @@
+// @name x-flex
+// @param {string} [$arguments] flex-grow|flex-shrink||flex-basis
+// @returns
+//     -webkit-flex: <arguments>;
+//         -ms-flex: <arguments>;
+//             flex: <arguments>;
+// @api public
+@mixin x-flex ($arguments...) {
+    $first-argument: nth($arguments, 1);
+    $length: length($arguments);
+    @if not $arguments or $length == 1 {
+        @if $first-argument == 'initial' or not $arguments {
+            $arguments: 0 1 'auto';
+        } @else if $first-argument == 'auto' {
+            $arguments: 1 1 'auto';
+        } @else if $first-argument == 'none' {
+            $arguments: 0 0 'auto';
+        }
+    }
+    $is-list: type-of($arguments) == 'list';
+    @if $is-list {
+        $list: ();
+        @each $item in $arguments {
+            $list: append($list, unquote($item));
+        }
+        $arguments: $list;
+    }
+    $arguments: unquote($arguments);
+    // 2011, 2012
+    @include experimental('flex', $arguments,
+        not -moz, -webkit, not -o, -ms, not -khtml, official
+    );
+}

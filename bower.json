@@ -1,0 +1,10 @@
+{
+    "name": "compass-flexbox",
+    "version": "0.0.0",
+    "main": "src/_flexbox.scss",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "components"
+    ]
+}
