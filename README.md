@@ -78,7 +78,7 @@ returns:
 ##### Browser support:
 
 - IE 10+
-- <sup>**[1](#notes)**</sup> Firefox 3.6+
+- <sup>**[1](#notes-display)**</sup> Firefox 3.6+
 - Chrome 4+
 - Safari 3.1+
 - Opera 12.1+
@@ -89,7 +89,7 @@ returns:
 - Blackberry 7+
 - IE Mobile 10
 
-<a></a>
+<a name="notes-display"></a>
 ###### Notes:
 
 1. Firefox 19- treats flex-containers as inline-block elements. Explicitly
@@ -191,7 +191,7 @@ returns:
 
 ##### Browser support:
 
-- <sup>**[1](#notes)**</sup> IE 10+
+- <sup>**[1](#notes-flex-wrap)**</sup> IE 10+
 - ~~Firefox~~
 - Chrome 21+
 - Safari 6.1+
@@ -201,9 +201,9 @@ returns:
 - ~~Android~~
 - Opera Mobile 12.1+
 - Blackberry 10
-- <sup>**[1](#notes)**</sup> IE Mobile 10
+- <sup>**[1](#notes-flex-wrap)**</sup> IE Mobile 10
 
-<a></a>
+<a name="notes-flex-wrap"></a>
 ###### Notes:
 
 1. In IE10+ `flex-wrap` doesn't work combined with `flex-direction: column`
@@ -232,7 +232,7 @@ returns:
 
 ##### Browser support:
 
-- <sup>**[1](#notes)**</sup> IE 10+
+- <sup>**[1](#notes-flex-flow)**</sup> IE 10+
 - ~~Firefox~~
 - Chrome 21+
 - Safari 6.1+
@@ -242,8 +242,9 @@ returns:
 - ~~Android~~
 - Opera Mobile 12.1+
 - Blackberry 10
-- <sup>**[1](#notes)**</sup> IE Mobile 10
+- <sup>**[1](#notes-flex-flow)**</sup> IE Mobile 10
 
+<a name="notes-flex-flow"></a>
 ###### Notes:
 
 1. In IE10+ `flex-flow` doesn't work when the direction is `column`
@@ -275,18 +276,18 @@ returns:
 ##### Browser support:
 
 - IE 10+
-- <sup>**[1](#notes)**</sup> Firefox 3.6+
-- <sup>**[1](#notes)**</sup> Chrome 4+
-- <sup>**[1](#notes)**</sup> Safari 3.1+
+- <sup>**[1](#notes-justify-content)**</sup> Firefox 3.6+
+- <sup>**[1](#notes-justify-content)**</sup> Chrome 4+
+- <sup>**[1](#notes-justify-content)**</sup> Safari 3.1+
 - Opera 12.1+
-- <sup>**[1](#notes)**</sup> iOS Safari 3.2+
+- <sup>**[1](#notes-justify-content)**</sup> iOS Safari 3.2+
 - ~~Opera Mini~~
-- <sup>**[1](#notes)**</sup> Android 2.1+
+- <sup>**[1](#notes-justify-content)**</sup> Android 2.1+
 - Opera Mobile 12.1+
-- <sup>**[1](#notes)**</sup> Blackberry 7+
+- <sup>**[1](#notes-justify-content)**</sup> Blackberry 7+
 - IE Mobile 10
 
-<a></a>
+<a name="notes-justify-content"></a>
 ###### Notes:
 
 1. No support for the `space-around` value. Firefox 22+, Chrome 21+, Safari 6.1+, 
@@ -397,7 +398,7 @@ returns:
 - Chrome 4+
 - Safari 3.1+
 - Opera 12.1+
- - iOS Safari 3.2+
+- iOS Safari 3.2+
 - ~~Opera Mini~~
 - Android 2.1+
 - Opera Mobile 12.1+
@@ -465,7 +466,7 @@ returns:
 
 ##### Browser support:
 
-- <sup>**[1](#notes)**</sup> IE 10+
+- <sup>**[1](#notes-flex-shrink)**</sup> IE 10+
 - Firefox 22+
 - Chrome 21+
 - Safari 6.1+
@@ -475,9 +476,9 @@ returns:
 - ~~Android~~
 - Opera Mobile 12.1+
 - Blackberry 10
-- <sup>**[1](#notes)**</sup> IE Mobile 10
+- <sup>**[1](#notes-flex-shrink)**</sup> IE Mobile 10
 
-<a></a>
+<a name="notes-flex-shrink"></a>
 ###### Notes:
 
 1. In order for `flex-shrink` to work in IE10+ you have to explicitly declare a
