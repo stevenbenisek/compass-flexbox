@@ -82,7 +82,7 @@ returns:
 - Android 2.1+
 - Opera Mobile 12.1+
 - Blackberry 7+
-- IE Mobile ?
+- IE Mobile 10
 
 <a></a>
 ###### Notes:
@@ -120,7 +120,7 @@ returns:
 - ~~Android~~
 - Opera Mobile 12.1+
 - Blackberry 10
-- IE Mobile ?
+- IE Mobile 10
 
 ---
 <a></a>
@@ -158,7 +158,7 @@ returns:
 - Android 2.1+
 - Opera Mobile 12.1+
 - Blackberry 7+
-- IE Mobile ?
+- IE Mobile 10
 
 ---
 <a></a>
@@ -192,7 +192,7 @@ returns:
 - ~~Android~~
 - Opera Mobile 12.1+
 - Blackberry 10
-- IE Mobile ?
+- <sup>**[1](#notes)**</sup> IE Mobile 10
 
 <a></a>
 ###### Notes:
@@ -231,7 +231,7 @@ returns:
 - ~~Android~~
 - Opera Mobile 12.1+
 - Blackberry 10
-- IE Mobile ?
+- <sup>**[1](#notes)**</sup> IE Mobile 10
 
 ###### Notes:
 
@@ -271,7 +271,7 @@ returns:
 - <sup>**[1](#notes)**</sup> Android 2.1+
 - Opera Mobile 12.1+
 - <sup>**[1](#notes)**</sup> Blackberry 7+
-- IE Mobile ?
+- IE Mobile 10
 
 <a></a>
 ###### Notes:
@@ -313,7 +313,7 @@ returns:
 - Android 2.1+
 - Opera Mobile 12.1+
 - Blackberry 7+
-- IE Mobile ?
+- IE Mobile 10
 
 ---
 <a></a>
@@ -347,7 +347,7 @@ returns:
 - ~~Android~~
 - Opera Mobile 12.1+
 - Blackberry 10
-- IE Mobile ?
+- IE Mobile 10
 
 ---
 <a></a>
@@ -383,7 +383,7 @@ returns:
 - Android 2.1+
 - Opera Mobile 12.1+
 - Blackberry 7+
-- IE Mobile ?
+- IE Mobile 10
 
 ---
 <a></a>
@@ -418,7 +418,7 @@ returns:
 - Android 2.1+
 - Opera Mobile 12.1+
 - Blackberry 7+
-- IE Mobile ?
+- IE Mobile 10
 
 ---
 <a></a>
@@ -442,7 +442,7 @@ returns:
 
 ##### Browser support:
 
-- <sup>**[1](#notes)**</sup>  IE 10+
+- <sup>**[1](#notes)**</sup> IE 10+
 - Firefox 22+
 - Chrome 21+
 - Safari 6.1+
@@ -452,7 +452,7 @@ returns:
 - ~~Android~~
 - Opera Mobile 12.1+
 - Blackberry 10
-- IE Mobile ?
+- <sup>**[1](#notes)**</sup> IE Mobile 10
 
 <a></a>
 ###### Notes:
@@ -493,7 +493,7 @@ returns:
 - ~~Android~~
 - Opera Mobile 12.1+
 - Blackberry 10
-- IE Mobile ?
+- IE Mobile 10
 
 ---
 <a></a>
@@ -527,7 +527,7 @@ returns:
 - ~~Android~~
 - Opera Mobile 12.1+
 - Blackberry 10
-- IE Mobile ?
+- IE Mobile 10
 
 ---
 <a></a>
@@ -561,7 +561,7 @@ returns:
 - ~~Android~~
 - Opera Mobile 12.1+
 - Blackberry 10
-- IE Mobile ?
+- ~~IE Mobile~~
 
 ## Further browsing
 
