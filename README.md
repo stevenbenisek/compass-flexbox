@@ -593,6 +593,51 @@ returns:
 - Blackberry 10
 - ~~IE Mobile~~
 
+## Tested on
+
+- Mac OS 10.8.5
+    - Chrome 30
+    - Firefox 24
+    - Safari 6.1
+    - Opera 12.16
+
+- Windows XP
+    - Firefox 3.6
+    - Safari 3.2
+
+- Windows 7
+    - IE 9
+
+- Windows 8
+    - IE 10
+
+- Windows 8.1
+    - IE 11
+
+- iOS 7 (iPad 3)
+    - iOS Safari 7
+    - Chrome 30
+    - Opera Mini 7
+
+- iOS 7 (iPhone 4S)
+    - iOS Safari 7
+    - Chrome 30
+
+- iOS 5.1 (iPad 1)
+    - iOS Safari 5.1
+    - Chrome 28
+
+- Android 4.0 (Alcatel One touch X'Pop)
+    - Stock browser
+    - Chrome 29
+    - Opera Mobile 16
+
+- Android 2.3 (Samsung GT-S5660 Galaxy Gio)
+    - Stock browser
+
+All other tests were conducted on [Browserstack](http://www.browserstack.com/), 
+[Saucelabs](https://saucelabs.com/) or simulators/emulators.
+
 ## Further browsing
 
 - [Using Flexbox: Mixing Old and New for the Best Browser Support](http://css-tricks.com/using-flexbox/)
