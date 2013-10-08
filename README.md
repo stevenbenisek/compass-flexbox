@@ -4,7 +4,7 @@ A collection of [Compass](http://compass-style.org/) mixins providing [the best
 possible browser support](http://css-tricks.com/using-flexbox/) for the
 [CSS Flexible Box Layout Module](http://dev.w3.org/csswg/css-flexbox/).
 
-(Test page)[http://stevenbenisek.github.io/compass-flexbox/]
+[Test page](http://stevenbenisek.github.io/compass-flexbox/)
 
 ## Installation
 
@@ -53,7 +53,7 @@ and also avoids any current or future naming collisions with other frameworks.
 <a></a>
 ### Display
 
-(Test page)[http://stevenbenisek.github.io/compass-flexbox/#display]
+[Test page](http://stevenbenisek.github.io/compass-flexbox/#display)
 
 #### Flex
 
@@ -131,7 +131,7 @@ returns:
 <a></a>
 ### Flex-direction
 
-(Test page)[http://stevenbenisek.github.io/compass-flexbox/#flex-direction]
+[Test page](http://stevenbenisek.github.io/compass-flexbox/#flex-direction)
 
 ##### Example:
 
@@ -171,7 +171,7 @@ returns:
 <a></a>
 ### Flex-wrap
 
-(Test page)[http://stevenbenisek.github.io/compass-flexbox/#flex-wrap]
+[Test page](http://stevenbenisek.github.io/compass-flexbox/#flex-wrap)
 
 ##### Example:
 
@@ -212,7 +212,7 @@ returns:
 <a></a>
 ### Flex-flow
 
-(Test page)[http://stevenbenisek.github.io/compass-flexbox/#flex-flow]
+[Test page](http://stevenbenisek.github.io/compass-flexbox/#flex-flow)
 
 ##### Example:
 
@@ -252,7 +252,7 @@ returns:
 <a></a>
 ### Justify-content
 
-(Test page)[http://stevenbenisek.github.io/compass-flexbox/#justify-content]
+[Test page](http://stevenbenisek.github.io/compass-flexbox/#justify-content)
 
 ##### Example:
 
@@ -296,7 +296,7 @@ iOS Safari 7 and Blackberry 10 have full support.
 <a></a>
 ### Align-items
 
-(Test page)[http://stevenbenisek.github.io/compass-flexbox/#align-items]
+[Test page](http://stevenbenisek.github.io/compass-flexbox/#align-items)
 
 ##### Example:
 
@@ -334,7 +334,7 @@ returns:
 <a></a>
 ### Align content
 
-(Test page)[http://stevenbenisek.github.io/compass-flexbox/#align-content]
+[Test page](http://stevenbenisek.github.io/compass-flexbox/#align-content)
 
 ##### Example:
 
@@ -370,7 +370,7 @@ returns:
 <a></a>
 ### Order
 
-(Test page)[http://stevenbenisek.github.io/compass-flexbox/#order]
+[Test page](http://stevenbenisek.github.io/compass-flexbox/#order)
 
 ##### Example:
 
@@ -408,7 +408,7 @@ returns:
 <a></a>
 ### Flex-grow
 
-(Test page)[http://stevenbenisek.github.io/compass-flexbox/#flex-grow]
+[Test page](http://stevenbenisek.github.io/compass-flexbox/#flex-grow)
 
 ##### Example:
 
@@ -445,7 +445,7 @@ returns:
 <a></a>
 ### Flex-shrink
 
-(Test page)[http://stevenbenisek.github.io/compass-flexbox/#flex-shrink]
+[Test page](http://stevenbenisek.github.io/compass-flexbox/#flex-shrink)
 
 ##### Example:
 
@@ -488,7 +488,7 @@ returns:
 <a></a>
 ### Flex-basis
 
-(Test page)[http://stevenbenisek.github.io/compass-flexbox/#flex-basis]
+[Test page](http://stevenbenisek.github.io/compass-flexbox/#flex-basis)
 
 ##### Example:
 
@@ -524,7 +524,7 @@ returns:
 <a></a>
 ### Flex
 
-(Test page)[http://stevenbenisek.github.io/compass-flexbox/#flex]
+[Test page](http://stevenbenisek.github.io/compass-flexbox/#flex)
 
 ##### Example:
 
@@ -560,7 +560,7 @@ returns:
 <a></a>
 ### Align-self
 
-(Test page)[http://stevenbenisek.github.io/compass-flexbox/#align-self]
+[Test page](http://stevenbenisek.github.io/compass-flexbox/#align-self)
 
 ##### Example:
 
