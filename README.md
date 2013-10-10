@@ -8,13 +8,7 @@ possible browser support](http://css-tricks.com/using-flexbox/) for the
 
 ## Installation
 
-You can download from this repository or install with [Bower](http://bower.io/).
-
-```bash
-bower install compass-flexbox
-```
-
-Once installed import `_flexbox.scss` in your sass file after importing
+Download from this repository and import `_flexbox.scss` in your sass file after importing
 [Compass](http://compass-style.org/).
 
 ```sass
