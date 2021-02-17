@@ -1,4 +1,6 @@
-# compass-flexbox
+# [DEPRECATED] compass-flexbox
+
+> Use [Autoprefixer](https://github.com/postcss/autoprefixer) and [Browserslist](https://github.com/browserslist/browserslist) instead of *compass-flexbox* for better and up to date results
 
 A collection of [Compass](http://compass-style.org/) mixins providing [the best
 possible browser support](http://css-tricks.com/using-flexbox/) for the
